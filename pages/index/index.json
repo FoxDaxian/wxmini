@@ -1,0 +1,6 @@
+{
+  "comment": "在需要引入目录下的json文件内引入，然后直接在wxml中使用即可",
+  "usingComponents": {
+    "index-com": "../../components/index/index"
+  }
+}
