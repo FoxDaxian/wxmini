@@ -1,10 +1,3 @@
-<template name="com">
-  <view>view</view>
-  11
-</template>
-<import src="./component.wxml" />
-<!-- <include src=""> 相当于把引入的代码放在这里 -->
-
 <!--index.wxml-->
 <view class="container">
   <view class="userinfo">
@@ -17,20 +10,4 @@
   <view class="usermotto">
     <text class="user-motto">{{motto}}</text>
   </view>
-  <template is="com"></template>
-  <block wx:if="{{true}}">
-    <view bindtap='chooseImage'>选择图片</view>
-    <view>123asd</view>
-  </block>
-  <template is="component" />
-</view>
-<wxs module="wxs">
-  var name = '冯世雨'
-  module.exports = {
-    name: name
-  }
-</wxs>
-<view>{{wxs.name}}</view>
-<view>
-  <index-com></index-com>
 </view>
